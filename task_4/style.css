@@ -1,0 +1,48 @@
+.body {
+    min-width: 600px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 6px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    width: 200px;
+    margin: 13px;
+}
+
+.input {
+    height: 25px;
+    width: 200px;
+    margin: 10px;
+}
+
+.warn_message {
+    color: red;
+    display: none;
+}
+
+.warn_message.active{
+    display: block;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px;
+    width: 600px;
+}
+
+.insert_image {
+    margin: 53px;
+}

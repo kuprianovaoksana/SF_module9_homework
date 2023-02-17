@@ -1,0 +1,38 @@
+body {
+    margin: 50px;
+}
+
+.d_pics {
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;     
+}
+
+.card {
+    height: 600px;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: rgb(108, 108, 255);
+    border-width: 0ch;
+    height: 25px;
+    color: white;
+}
+
+.btn.active{
+    background-color: rgb(108, 108, 255, 0.3);
+    border-width: 0ch;
+    height: 25px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.input {
+    padding-left: 10px;
+    border: 1px solid #bdbdbd;
+    height: 25px;
+}
+
