@@ -28,7 +28,7 @@ document.querySelector(".button").addEventListener('click', () => {
 
 
 
-function validation(number, limit) {
+function validation(page, limit) {
 
     let message = "";
 
@@ -36,21 +36,21 @@ function validation(number, limit) {
     let msg2 = "Лимит вне диапазона от 1 до 10";
     let msg3 = "Номер страницы и лимит вне диапазона от 1 до 10";
 
-    let checkNumber = false;
+    let checkPage = false;
     let checkLimit = false;
 
-    if ((number > maxValue) || (number < minValue) || (isNaN(number))) {
-        checkNumber = true;        
+    if ((page > maxValue) || (page < minValue) || (isNaN(page))) {
+        checkPage = true;        
     }
     if ((limit > maxValue) || (limit < minValue) || (isNaN(limit))) {
         checkLimit = true;            
     }
     
-    if (checkNumber && checkLimit) {
+    if (checkPage && checkLimit) {
         message = msg3;        
-    }  else if (checkNumber && !checkLimit) {
+    }  else if (checkPage && !checkLimit) {
         message = msg1;        
-    } else if (checkLimit && !checkNumber) {
+    } else if (checkLimit && !checkPage) {
         message = msg2;        
     }
 
@@ -58,7 +58,7 @@ function validation(number, limit) {
         document.querySelector('.warning_message').innerText = message;
         document.querySelector('.warning_message').classList.add('active');
     } else {
-        sendRequest(number, limit);
+        sendRequest(page, limit);
     }
 }
 
